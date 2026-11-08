@@ -1,0 +1,11 @@
+// Base build configuration for LitterLog.
+// To sign for a physical device without dirtying project.pbxproj, create an
+// untracked Xcode/Local.xcconfig file with:
+//   DEVELOPMENT_TEAM = YOUR_TEAM_ID
+//   PRODUCT_BUNDLE_IDENTIFIER = com.yourname.litterlog
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = com.litterlog.app
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = Apple Development
+
+#include? "Local.xcconfig"

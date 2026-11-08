@@ -1,0 +1,87 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Xcode & Swift
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.profraw
+.derived-data-log-*
+.build/
+.swiftpm/
+Pods/
+build/
+build-*/
+
+# Python & ML Runtime
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.python311/
+venv/
+wandb/
+*.log
+
+# Local Datasets, Frame Caches & Live Event Store
+classifier/frames/
+classifier/frames_cache/
+classifier/events/
+classifier/certs/
+classifier/split.json
+classifier/model.ipynb
+classifier/outputs/
+classifier/runs/
+classifier/self_training_*/
+classifier/pseudo_training_*/
+classifier/combined_training_*/
+classifier/checkpoints_*/
+
+# Model Checkpoints (ignore all local/new checkpoints except the two published releases)
+classifier/checkpoints/*
+!classifier/checkpoints/video_24f_balanced/
+!classifier/checkpoints/self_training/
+classifier/checkpoints/*/last.npz
+classifier/checkpoints/*/epoch_*.npz
+classifier/checkpoints/*/optimizer_*.npz
+events/
+certs/
+server/certs/
+server/clips/
+server/thumbs/
+server/archive/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite*
+*.pem
+*.crt
+*.cer
+*.key
+vapid.json
+push_subscriptions.json
+
+# Environment & Local Config (never commit personal Team ID, certs, or tokens)
+.env
+.env.local
+App/LocalTLS.plist
+Xcode/Local.xcconfig
+server/deploy_*.sh
+server/.litterlog-server-stage.tar.gz
+Original/
+
+# IDE
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Personal local-only docs and name-switching helpers
+README.personal.md
+.personal/

@@ -1,0 +1,6 @@
+# Direct dependencies from the working Mac environment. Linux image build remains required.
+aiohttp==3.14.5
+pylitterbot==2025.7.0
+requests==2.34.2
+imageio-ffmpeg==0.7.0
+cryptography==50.0.2
